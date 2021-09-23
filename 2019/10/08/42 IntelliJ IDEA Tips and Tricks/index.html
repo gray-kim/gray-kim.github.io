@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>42 IntelliJ IDEA Tips and Tricks | gray-kim&#39;s blog</title>
+  <meta name="keywords" content=" intellij , tools ">
+  <meta name="description" content="42 IntelliJ IDEA Tips and Tricks | gray-kim&#39;s blog">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hello World">
+<meta property="og:url" content="https://gray-kim.github.io/2021/09/17/hello-world/index.html">
+<meta property="og:site_name" content="gray-kim&#39;s blog">
+<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-09-17T05:19:14.639Z">
+<meta property="article:modified_time" content="2021-09-17T05:44:48.887Z">
+<meta property="article:author" content="gray-kim">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/darcula.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="false" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="false" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/avatar.jpg"/>
+</a>
+<div class="author">
+    <span>gray-kim</span>
+</div>
+
+<div class="icon">
+    
+        
+            <a title="github"
+               href="https://github.com/gray-kim"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="email"
+               href="mailto:egoist3.work@gmail.com"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-email"></use>
+                    </svg>
+                
+            </a>
+        
+    
+</div>
+
+
+
+    <a class="more-menus">更多菜单</a>
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="All">All
+            
+                <small>(3)</small>
+            
+        </div>
+    </li>
+    
+        
+            
+                <li>
+                    <div data-rel="hexo">
+                        
+                        hexo
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="intellij">
+                        
+                        intellij
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+            
+            
+                <a class="dynamic-menu "
+                   target="_blank"
+                        
+                   href="https://github.com/gray-kim">github</a>
+        
+    </div>
+    <div>
+        
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="3">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        Links
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="검색"></i>
+            <div class="right-title">All</div>
+            <i class="iconfont icon-file-tree" data-title="개요 보기로 전환"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="이전"></i>
+            <input id="local-search-input" autocomplete="off"/>
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="대소문자 구분"></i>
+            <i class="iconfont icon-tag" data-title="태그"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">개요</div>
+            <i class="iconfont icon-list" data-title="기사 목록으로 전환"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>blog</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>hexo</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>intellij</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>tools</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>블로그</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        <a  class="All "
+           href="/2021/09/17/hello-world/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Hello World">Hello World</span>
+            <span class="post-date" title="2021-09-17 14:19:14">2021/09/17</span>
+        </a>
+        
+        <a  class="All intellij "
+           href="/2019/10/08/42%20IntelliJ%20IDEA%20Tips%20and%20Tricks/"
+           data-tag="intellij,tools"
+           data-author="" >
+            <span class="post-title" title="42 IntelliJ IDEA Tips and Tricks">42 IntelliJ IDEA Tips and Tricks</span>
+            <span class="post-date" title="2019-10-08 11:16:08">2019/10/08</span>
+        </a>
+        
+        <a  class="All hexo "
+           href="/2019/10/08/test/"
+           data-tag="blog,블로그,hexo"
+           data-author="" >
+            <span class="post-title" title="&#39;test&#39;">&#39;test&#39;</span>
+            <span class="post-date" title="2019-10-08 11:16:08">2019/10/08</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-42 IntelliJ IDEA Tips and Tricks" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">42 IntelliJ IDEA Tips and Tricks</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="intellij">intellij</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color4">intellij</a>
+            
+            <a class="color1">tools</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            Created At : <time class="date" title='Updated At: 2021-09-17 15:48:54'>2019-10-08 11:16</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            Views 👀 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#42-IntelliJ-IDEA-Tips-and-Tricks"><span class="toc-text">42 IntelliJ IDEA Tips and Tricks</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Navigation-basics"><span class="toc-text">Navigation basics</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Symbol-lookup"><span class="toc-text">Symbol lookup</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Find-in-path"><span class="toc-text">Find in path</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Search-everywhere"><span class="toc-text">Search everywhere</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Working-without-mouse"><span class="toc-text">Working without mouse</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Working-without-editor-tabs"><span class="toc-text">Working without editor tabs</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Autoscroll-from-to-source"><span class="toc-text">Autoscroll from&#x2F;to source</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-new-file-folder"><span class="toc-text">Create new file&#x2F;folder</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Scratch-files"><span class="toc-text">Scratch files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Hide-all-windows-panels"><span class="toc-text">Hide all windows&#x2F;panels</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Syntax-aware-selection"><span class="toc-text">Syntax aware selection</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Move-duplicate-delete-lines"><span class="toc-text">Move&#x2F;duplicate&#x2F;delete lines</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Multiple-cursors"><span class="toc-text">Multiple cursors</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Vim-plugin-21-10"><span class="toc-text">Vim plugin(21:10)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Clean-up-code"><span class="toc-text">Clean up code</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Language-injection"><span class="toc-text">Language injection</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Code-completion"><span class="toc-text">Code completion</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Code-templates"><span class="toc-text">Code templates</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Postfix-completion"><span class="toc-text">Postfix completion</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Advanced-navigation-go-to-supermethod-go-to-superclass-type-hierarchy-method-hierarchy"><span class="toc-text">Advanced navigation: go to supermethod, go to superclass, type hierarchy, method hierarchy</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Structure-popup"><span class="toc-text">Structure popup</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Inspections"><span class="toc-text">Inspections</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Structural-search-and-replace"><span class="toc-text">Structural search and replace</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Analyze-data-flow"><span class="toc-text">Analyze data flow</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Database-tools"><span class="toc-text">Database tools</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#VCS"><span class="toc-text">VCS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Debugging"><span class="toc-text">Debugging</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Refactoring-basics"><span class="toc-text">Refactoring basics</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Quicklists"><span class="toc-text">Quicklists</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Find-action"><span class="toc-text">Find action</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Productivity-guide"><span class="toc-text">Productivity guide</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Zero-latency-typing"><span class="toc-text">Zero latency typing</span></a></li></ol></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="42-IntelliJ-IDEA-Tips-and-Tricks"><a href="#42-IntelliJ-IDEA-Tips-and-Tricks" class="headerlink" title="42 IntelliJ IDEA Tips and Tricks"></a>42 IntelliJ IDEA Tips and Tricks</h1><p><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=eq3KiAH4IBI">https://www.youtube.com/watch?v=eq3KiAH4IBI</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=eq3KiAH4IBI">https://www.youtube.com/watch?v=eq3KiAH4IBI</a></p>
+<ul>
+<li><p>Contents</p>
+<p>  4:42 Navigation basics<br>  5:47 Symbol lookup<br>  6:51 Find in path<br>  7:26 Search everywhere<br>  9:27 Working without mouse<br>  10:04 Working without editor tabs<br>  12:36 Autoscroll from/to source<br>  14:11 Create new file/folder<br>  15:28 Scratch files<br>  16:18 Hide all windows/panels<br>  17:51 Syntax aware selection<br>  18:37 Move/duplicate/delete lines<br>  19:28 Multiple cursors<br>  21:10 Vim plugin<br>  22:09 Clean up code<br>  25:18 Language injection<br>  27:52 Code completion<br>  31:07 Code templates<br>  33:15 Postfix completion<br>  36:10 Advanced navigation: go to supermethod, go to superclass, type hierarchy, method hierarchy<br>  37:25 Structure popup<br>  38:24 Inspections<br>  40:36 Structural search and replace<br>  43:31 Analyze data flow<br>  45:44 Database tools<br>  47:24 VCS<br>  49:46 Debugging<br>  53:18 Refactoring basics<br>  56:02 Quicklists<br>  57:21 Find action<br>  58:17 Productivity guide<br>  59:12 Zero latency typing</p>
+</li>
+</ul>
+<h3 id="Navigation-basics"><a href="#Navigation-basics" class="headerlink" title="Navigation basics"></a>Navigation basics</h3><ul>
+<li>Navigate Class : Ctrl + N (⌘+O)<ul>
+<li>클래스명의 대문자 항목을 줄임말로 검색 가능 (ex. OperationToIterator → OTI로 검색)</li>
+</ul>
+</li>
+<li>Navigate File : Ctrl + Shift + N (⌘+⇧+O)<ul>
+<li>class 검색과 동일하게 대문자 줄임말 사용 가능</li>
+<li>path로 검색가능 (ex. /test/test.java 처럼 경로 입력해서 검색 가능)</li>
+</ul>
+</li>
+</ul>
+<h3 id="Symbol-lookup"><a href="#Symbol-lookup" class="headerlink" title="Symbol lookup"></a>Symbol lookup</h3><ul>
+<li>Navigate Symbol : Ctrl + Alt + Shift + N (⌘+⌥+O)<ul>
+<li>class 검색과 동일하게 대문자 줄임말 사용 가능</li>
+<li>패키지명(줄임말가능).메소드명의 형태로 검색 가능 (ex. rx.operators.OperationSumTest 클래스 내 존재하는 testEmptySumFloats() 라는 메소드 검색 시 OST.sumfloat 입력만 해도 찾을 수 있음</li>
+</ul>
+</li>
+</ul>
+<h3 id="Find-in-path"><a href="#Find-in-path" class="headerlink" title="Find in path"></a>Find in path</h3><ul>
+<li>Find in path : Ctrl + Shift + F (⌘+⇧+F)<ul>
+<li>preview 화면에서 바로 소스를 볼 수 있음</li>
+</ul>
+</li>
+</ul>
+<h3 id="Search-everywhere"><a href="#Search-everywhere" class="headerlink" title="Search everywhere"></a>Search everywhere</h3><ul>
+<li>Search everywhere : Double Shift (Double ⇧)<ul>
+<li>말 그대로 어떤 것이든 검색함</li>
+<li>tab으로 다른 섹션으로 이동가능</li>
+<li>Run Configurations에서 설정해둔 서버 이름으로 검색해서 Debug / Run 으로 서버 구동</li>
+</ul>
+</li>
+</ul>
+<h3 id="Working-without-mouse"><a href="#Working-without-mouse" class="headerlink" title="Working without mouse"></a>Working without mouse</h3><ul>
+<li>마우스 없이 키보드로 작업하는 것을 추천함 (키보드만으로도 충분히 가능)</li>
+</ul>
+<h3 id="Working-without-editor-tabs"><a href="#Working-without-editor-tabs" class="headerlink" title="Working without editor tabs"></a>Working without editor tabs</h3><ul>
+<li>Project, bug report, maven 등의 탭을 열어두고 쓰지 말아라.</li>
+<li>인텔리제이는 탭이 필요없다. 비효율적이다. 쓰지마라.</li>
+<li>Recent Files : Ctrl + E (⌘+E)<ul>
+<li>최근사용한 파일을 보여주는 팝업</li>
+</ul>
+</li>
+<li>Recently Changed Files : Ctrl + Shift + E (⌘+⇧+E)<ul>
+<li>최근 변경한 파일을 보여주는 팝업</li>
+</ul>
+</li>
+<li>탭 이동 : Alt + 1, 2, 3, 4 … 0<ul>
+<li>keymap에서 설정한 단축키로 각 탭들을 열고 닫고 가능</li>
+<li>Alt + 1(기본 설정) 은 Project 탭을 열고 닫기함</li>
+</ul>
+</li>
+</ul>
+<h3 id="Autoscroll-from-to-source"><a href="#Autoscroll-from-to-source" class="headerlink" title="Autoscroll from/to source"></a>Autoscroll from/to source</h3><ul>
+<li>Project와 Source 탭 간의 연동</li>
+<li>from source인 경우 현재 작업하고 있는 소스 기준으로 Project탭에서 해당 위치로 자동 스크롤해서 보여줌</li>
+<li>to source인 경우 Project탭에서 보여지고 있는 위치의 소스를 보여주는 듯 (정확하게 확인이 안됨…..) ← 이걸 더 추천한다고 함</li>
+<li>Jump to Source : F4 (⌘+↓)</li>
+</ul>
+<h3 id="Create-new-file-folder"><a href="#Create-new-file-folder" class="headerlink" title="Create new file/folder"></a>Create new file/folder</h3><ul>
+<li>New : Alt + Ins (⌘+N)<ul>
+<li>Project 창에서 실행 시 새로운 항목 생성</li>
+<li>디렉토리 생성 시 단계 별로 각각 생성하지말고  /test/blah/blah 이런식으로 한번에 생성</li>
+</ul>
+</li>
+</ul>
+<h3 id="Scratch-files"><a href="#Scratch-files" class="headerlink" title="Scratch files"></a>Scratch files</h3><ul>
+<li>Find Action : Ctrl + Shift + A (⌘+⇧+A)</li>
+<li>Scratch Files : Ctrl + Shift + Alt + Ins (⌘+⇧+N)<ul>
+<li>테스트용으로 소스를 작성하고 싶은 경우라던가 할 때 임의의 파일을 생성해줌</li>
+</ul>
+</li>
+</ul>
+<h3 id="Hide-all-windows-panels"><a href="#Hide-all-windows-panels" class="headerlink" title="Hide all windows/panels"></a>Hide all windows/panels</h3><ul>
+<li>Hide All Windows : Ctrl + Shift + F12 (⌘+⇧+F12)<ul>
+<li>모든 윈도우(탭)을 토글한다.</li>
+<li>비슷한 기능으로 메뉴 → View → Appearance → Enter Distruction Free Mode가 있고 Enter Presentation Mode 에서는 모든 항목을 크게 보여줌</li>
+</ul>
+</li>
+<li>Stretch to Left/Right : Ctrl + Shift + ←/→ (⌘+⇧+←/→)<ul>
+<li>각 윈도우(탭)의 크기 조정 (editor 창에서는 적용 안됨)</li>
+</ul>
+</li>
+</ul>
+<h3 id="Syntax-aware-selection"><a href="#Syntax-aware-selection" class="headerlink" title="Syntax aware selection"></a>Syntax aware selection</h3><ul>
+<li>Extend Selection : Ctrl + W (⌥+Up)<ul>
+<li>라인 → 괄호 → 메소드 → 클래스 작은 항목부터 넓게 선택</li>
+</ul>
+</li>
+</ul>
+<h3 id="Move-duplicate-delete-lines"><a href="#Move-duplicate-delete-lines" class="headerlink" title="Move/duplicate/delete lines"></a>Move/duplicate/delete lines</h3><ul>
+<li>Move Line Up/Down :  Shift + Alt + Up/Down (⌥+⇧+Up/Down)</li>
+<li>Choose Content to Paste : Ctrl + Shift + V<ul>
+<li>복사했던 항목들이 저장됨</li>
+</ul>
+</li>
+<li>Delete Line :  Ctrl + Y (⌘+Backspace)</li>
+</ul>
+<h3 id="Multiple-cursors"><a href="#Multiple-cursors" class="headerlink" title="Multiple cursors"></a>Multiple cursors</h3><ul>
+<li>Edit Multiple Lines : Alt + Shift + Mouse click</li>
+<li>Find Next / Move to Next Occurrence : F3 (⌘+G)</li>
+<li>Add Selection for Next Occurrence : Alt + J (^+G)</li>
+<li>Select All Occurrence : Shift + Alt + J (^+⇧+G)</li>
+</ul>
+<h3 id="Vim-plugin-21-10"><a href="#Vim-plugin-21-10" class="headerlink" title="Vim plugin(21:10)"></a>Vim plugin(21:10)</h3><ul>
+<li>ideavim plugin 설치</li>
+</ul>
+<h3 id="Clean-up-code"><a href="#Clean-up-code" class="headerlink" title="Clean up code"></a>Clean up code</h3><ul>
+<li>Auto-Indent Lines : Alt + Ctrl + I (^+⌥+I)</li>
+<li>Reformat Code : Alt + Ctrl + L (⌥+⌘+L)</li>
+<li>Settings - Editor - Code Style 에서 상세 지정 가능</li>
+<li>코드 선택 후 Alt + Enter 로 Adjust Code Style에서도 설정 가능</li>
+</ul>
+<h3 id="Language-injection"><a href="#Language-injection" class="headerlink" title="Language injection"></a>Language injection</h3><ul>
+<li>변수 선언 후 우변에서 Alt + Enter 로 Inject Language or Reference 선택 &gt; 원하는 언어 형식 선택 (ex. JSON) &gt; 다시 Alt + Enter &gt; Edit JSON Fragment 하면 나오는 편집창에서 입력, RegExp 확인도 가능</li>
+</ul>
+<h3 id="Code-completion"><a href="#Code-completion" class="headerlink" title="Code completion"></a>Code completion</h3><ul>
+<li>Parameter Info : Ctrl + P (⌘+P) 파라미터가 들어갈 () 괄호 안에서 누르면 정보 보여줌</li>
+<li>Completion Basic : Ctrl + Space (^+Space)</li>
+<li>Completion SmartType : Shift + Ctrl + Space (^+⇧+Space)</li>
+<li>Completion Cyclic Expand Word : Alt + Slash/ (⌥+/) 첫글자 입력 후 단축키 입력 시 해당 문자로 시작하는 단어들의 사이클을 돎</li>
+<li>Complete Current Statement : Shift + Ctrl + Enter (⇧+⌘+Enter)</li>
+</ul>
+<h3 id="Code-templates"><a href="#Code-templates" class="headerlink" title="Code templates"></a>Code templates</h3><ul>
+<li>Settings - Editor - Live Template</li>
+<li>Insert Live Template : Ctrl + J (⌘+J)</li>
+<li>Surround With : Ctrl + Alt + T (⌥+⌘+T) 감쌀 문장에서 단축키 입력</li>
+</ul>
+<h3 id="Postfix-completion"><a href="#Postfix-completion" class="headerlink" title="Postfix completion"></a>Postfix completion</h3><ul>
+<li>null 체크 깜빡했을 때 object.notnull 선택하면 자동완성 됨</li>
+<li>emmet 형식 사용 가능 ex) #myDiv&gt;ul&gt;li*10 + Tab</li>
+</ul>
+<h3 id="Advanced-navigation-go-to-supermethod-go-to-superclass-type-hierarchy-method-hierarchy"><a href="#Advanced-navigation-go-to-supermethod-go-to-superclass-type-hierarchy-method-hierarchy" class="headerlink" title="Advanced navigation: go to supermethod, go to superclass, type hierarchy, method hierarchy"></a>Advanced navigation: go to supermethod, go to superclass, type hierarchy, method hierarchy</h3><ul>
+<li>Navigate → Declaration : Ctrl + B (⌘+B)</li>
+<li>Navigate → Super Method : Ctrl + U (⌘+U)</li>
+<li>Navigate → Implementation : Ctrl + Alt + B (⌥+⌘+B)</li>
+<li>Navigate → Type Hierarchy : Ctrl + H (^+H)</li>
+<li>Navigate → Method Hierarchy : Shift + Ctrl + H (⇧+⌘+H)</li>
+<li>Navigate → Jump to Navigation Bar : Alt + Home (⌘+Up)</li>
+</ul>
+<h3 id="Structure-popup"><a href="#Structure-popup" class="headerlink" title="Structure popup"></a>Structure popup</h3><ul>
+<li>Navigate → File Structure : Ctrl + F12 (⌘+F12)</li>
+<li>Structure : Alt + 7 (⌘+7)</li>
+</ul>
+<h3 id="Inspections"><a href="#Inspections" class="headerlink" title="Inspections"></a>Inspections</h3><ul>
+<li>Settings - Editor - Inspections에서 설정 가능</li>
+<li>Menu - Analyze - Inspect Code</li>
+</ul>
+<h3 id="Structural-search-and-replace"><a href="#Structural-search-and-replace" class="headerlink" title="Structural search and replace"></a>Structural search and replace</h3><ul>
+<li>Structural Search (Action 검색) : try catch 문 등의 구조로 검색 가능</li>
+<li>Structural Replace (Action 검색) : 해당 구조의 내용 변경도 가능</li>
+</ul>
+<h3 id="Analyze-data-flow"><a href="#Analyze-data-flow" class="headerlink" title="Analyze data flow"></a>Analyze data flow</h3><ul>
+<li>Menu - Analyze - Analyze Data Flow to Here 선택한 항목의 값이 어디에서 세팅되고 어떤걸 리턴하는지 알 수 있음</li>
+<li>Metrics Reloded (plugin) : 모든 종류의 metrics를 계산할 수 있음</li>
+</ul>
+<h3 id="Database-tools"><a href="#Database-tools" class="headerlink" title="Database tools"></a>Database tools</h3><ul>
+<li>소스 내에 쿼리문이 있는 경우 Alt + Enter를 통해 직접 쿼리를 실행하거나 컬럼명 변경이 가능함</li>
+</ul>
+<h3 id="VCS"><a href="#VCS" class="headerlink" title="VCS"></a>VCS</h3><ul>
+<li>Version Control - log &gt; Ctrl + D : 비교화면</li>
+</ul>
+<h3 id="Debugging"><a href="#Debugging" class="headerlink" title="Debugging"></a>Debugging</h3><ul>
+<li>Editor 라인 넘버 부분에서 더블클릭하여 breakpoint 설정</li>
+<li>breakpoint 에서 우클릭 하여 다양한 설정 가능</li>
+<li>라인 넘버 부분에서 우클릭 하여 전체를 breakpoint 설정할 수 있고 일부만 설정할 수도 있음. (긴 문장의 람다 식인 경우 부분별로 쪼개서 가능)</li>
+</ul>
+<h3 id="Refactoring-basics"><a href="#Refactoring-basics" class="headerlink" title="Refactoring basics"></a>Refactoring basics</h3><ul>
+<li>Refactor This : Shift + Ctrl + Alt + T (^+T)</li>
+<li>Extract → Variable : Ctrl + Alt + V (⌥+⌘+V)</li>
+</ul>
+<h3 id="Quicklists"><a href="#Quicklists" class="headerlink" title="Quicklists"></a>Quicklists</h3><ul>
+<li>Settings - Quicklist 에서 설정 가능</li>
+<li>VCS Operations Popup : Alt + ` (^+V)</li>
+<li>Quick Switch Scheme : Ctrl + <code> (^+</code>)</li>
+</ul>
+<h3 id="Find-action"><a href="#Find-action" class="headerlink" title="Find action"></a>Find action</h3><ul>
+<li>Find Action : Ctrl + Shift + A (⌘+⇧+A)</li>
+</ul>
+<h3 id="Productivity-guide"><a href="#Productivity-guide" class="headerlink" title="Productivity guide"></a>Productivity guide</h3><ul>
+<li>Menu - Help - Productivity Guide 얼마나 사용했는지 언제 마지막으로 썼는지 등 팝업</li>
+</ul>
+<h3 id="Zero-latency-typing"><a href="#Zero-latency-typing" class="headerlink" title="Zero latency typing"></a>Zero latency typing</h3><ul>
+<li>Find Action &gt; Registry &gt; edito.zero.latency 부분에서 체크</li>
+</ul>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> By gray-kim </span>
+    </div>
+</article>
+
+
+
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2019 gray-kim
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+<div class="mobile-menus-out" >
+
+</div>
+<div class="mobile-menus">
+    
+    
+    
+    
+    <a class="dynamic-menu " target="_blank"  href="https://github.com/gray-kim">github</a>
+    
+</div>
+
+
+</html>
